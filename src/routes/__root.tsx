@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "R. Velozo | Mentoria & Consultoria" },
+      { name: "description", content: "Mentoria estratégica para empresários e líderes que desejam delegar melhor, organizar processos, desenvolver equipes e transformar gestão em liberdade." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "R. Velozo | Mentoria & Consultoria" },
+      { property: "og:description", content: "Mentoria estratégica para empresários e líderes que desejam delegar melhor, organizar processos, desenvolver equipes e transformar gestão em liberdade." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "R. Velozo | Mentoria & Consultoria" },
+      { name: "twitter:description", content: "Mentoria estratégica para empresários e líderes que desejam delegar melhor, organizar processos, desenvolver equipes e transformar gestão em liberdade." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/C2IdplJu9mddsm9wr8tXf7QGqaa2/social-images/social-1779953377267-Capa_Linkedin.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/C2IdplJu9mddsm9wr8tXf7QGqaa2/social-images/social-1779953377267-Capa_Linkedin.webp" },
     ],
     links: [
       {
