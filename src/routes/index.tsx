@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-velozo.jpg";
+import heroImg from "@/assets/velozo-hero.jpg";
+import portraitImg from "@/assets/velozo-portrait.jpg";
+import seatedImg from "@/assets/velozo-seated.jpg";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -275,6 +277,15 @@ function Authority() {
             e direção de unidades educacionais. Hoje, esse repertório se traduz em consultoria
             objetiva para empresários que precisam de método, não de palco.
           </p>
+          <div className="mt-10 relative aspect-[4/5] overflow-hidden max-w-sm">
+            <img
+              src={seatedImg}
+              alt="Raphael Velozo"
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 ring-1 ring-[var(--deep)]/10" />
+          </div>
         </div>
 
         <div className="lg:col-span-7">
@@ -378,6 +389,9 @@ function FinalCTA() {
   return (
     <section id="contato" className="py-28 lg:py-36 bg-background">
       <div className="mx-auto max-w-4xl px-6 lg:px-10 text-center">
+        <div className="mx-auto mb-10 h-20 w-20 overflow-hidden rounded-full ring-1 ring-[var(--gold)]/40">
+          <img src={portraitImg} alt="Raphael Velozo" loading="lazy" className="h-full w-full object-cover" />
+        </div>
         <p className="gold-rule justify-center text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)] inline-block">
           Próximo passo
         </p>
