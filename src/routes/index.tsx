@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-velozo.jpg";
+import heroImg from "@/assets/velozo-hero.jpg";
+import portraitImg from "@/assets/velozo-portrait.jpg";
+import seatedImg from "@/assets/velozo-seated.jpg";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
