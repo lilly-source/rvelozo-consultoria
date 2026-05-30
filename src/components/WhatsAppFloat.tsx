@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 
-const PHONE = "5521999999999"; // placeholder
+const PHONE = "5521964454543"; // placeholder
 const MESSAGE = "Olá, gostaria de agendar um diagnóstico estratégico.";
 
 export function WhatsAppFloat() {

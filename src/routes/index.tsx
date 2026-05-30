@@ -86,7 +86,7 @@ function Hero() {
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
             <a
-              href="https://wa.me/5521999999999"
+              href="https://wa.me/5521964454543?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-7 py-4 text-sm tracking-wide text-[var(--deep)] border border-[var(--deep)]/15 hover:border-[var(--institutional)] hover:text-[var(--institutional)] transition-colors"
@@ -405,7 +405,7 @@ function FinalCTA() {
         </p>
         <div className="mt-12">
           <a
-            href="https://wa.me/5521999999999"
+            href="https://wa.me/5521964454543?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico."
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 bg-[var(--deep)] text-[var(--background)] px-9 py-5 text-sm tracking-wide hover:bg-[var(--institutional)] transition-colors"
