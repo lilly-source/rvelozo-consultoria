@@ -16,7 +16,7 @@ export function SiteHeader() {
         </nav>
         <a
           href="#contato"
-          className="hidden md:inline-flex items-center text-xs uppercase tracking-[0.22em] text-[var(--deep)] border-b border-[var(--gold)] pb-1 hover:text-[var(--gold)] transition-colors"
+          className="hidden md:inline-flex items-center text-xs uppercase tracking-[0.22em] text-[var(--deep)] border-b border-[var(--gold)] pb-1 hover:text-[var(--institutional)] hover:border-[var(--institutional)] transition-colors"
         >
           Agendar Diagnóstico
         </a>
