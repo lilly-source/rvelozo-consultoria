@@ -89,7 +89,7 @@ function Hero() {
               href="https://wa.me/5521999999999"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-7 py-4 text-sm tracking-wide text-[var(--deep)] border border-[var(--deep)]/15 hover:border-[var(--gold)] hover:text-[var(--gold)] transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-7 py-4 text-sm tracking-wide text-[var(--deep)] border border-[var(--deep)]/15 hover:border-[var(--institutional)] hover:text-[var(--institutional)] transition-colors"
             >
               Falar no WhatsApp
             </a>
@@ -364,14 +364,14 @@ function Services() {
           {services.map(({ icon: Icon, title, desc, cta }) => (
             <article
               key={title}
-              className="group bg-background border border-[var(--border)] p-8 lg:p-10 flex flex-col hover:border-[var(--gold)] transition-colors"
+              className="group bg-background border border-[var(--border)] p-8 lg:p-10 flex flex-col hover:border-[var(--institutional)] transition-colors"
             >
               <Icon className="h-6 w-6 text-[var(--gold)]" strokeWidth={1.4} />
               <h3 className="mt-8 font-serif text-2xl text-[var(--deep)]">{title}</h3>
               <p className="mt-4 text-sm leading-relaxed text-[var(--ink-soft)] flex-1">{desc}</p>
               <a
                 href="#contato"
-                className="mt-8 inline-flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-[var(--deep)] border-b border-[var(--gold)] pb-1 self-start group-hover:text-[var(--gold)] transition-colors"
+                className="mt-8 inline-flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-[var(--deep)] border-b border-[var(--gold)] pb-1 self-start group-hover:text-[var(--institutional)] transition-colors"
               >
                 {cta}
                 <ArrowUpRight className="h-3.5 w-3.5" />
