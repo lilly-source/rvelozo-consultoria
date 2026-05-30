@@ -33,7 +33,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-[#9C957F]">
           <p>© {new Date().getFullYear()} R. Velozo Mentoria &amp; Consultoria. Todos os direitos reservados.</p>
-          <p className="tracking-[0.2em] uppercase">Boutique Strategic Advisory</p>
+          <p className="tracking-[0.2em] uppercase">Empreendedorismo Real</p>
         </div>
       </div>
     </footer>
