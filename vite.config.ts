@@ -6,10 +6,15 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+// Force-on nitro with the Vercel preset so `vite build` emits the Vercel
+// Build Output API artifact at `.vercel/output`. Without this, the default
+// Cloudflare Workers bundle is produced and Vercel returns 404 NOT_FOUND
+// because there is no routable output for its runtime.
 export default defineConfig({
   tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
     server: { entry: "server" },
+  },
+  nitro: {
+    preset: process.env.VERCEL ? "vercel" : "cloudflare-module",
   },
 });
