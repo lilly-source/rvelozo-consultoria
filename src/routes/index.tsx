@@ -277,7 +277,7 @@ function Authority() {
             e direção de unidades educacionais. Hoje, esse repertório se traduz em consultoria
             objetiva para empresários que precisam de método, não de palco.
           </p>
-          <div className="mt-10 relative aspect-[4/5] overflow-hidden max-w-sm lg:hidden">
+          <div className="mt-10 relative aspect-[4/5] overflow-hidden max-w-sm">
             <img
               src={seatedImg}
               alt="Raphael Velozo"
@@ -309,16 +309,6 @@ function Authority() {
             <Stat label="Anos de mercado" value="25+" />
             <Stat label="Setores atendidos" value="12" />
             <Stat label="Líderes formados" value="300+" />
-          </div>
-
-          <div className="mt-10 hidden lg:block relative aspect-[16/10] overflow-hidden">
-            <img
-              src={seatedImg}
-              alt="Raphael Velozo"
-              loading="lazy"
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 ring-1 ring-[var(--deep)]/10" />
           </div>
         </div>
       </div>
