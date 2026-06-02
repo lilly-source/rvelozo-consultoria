@@ -310,6 +310,16 @@ function Authority() {
             <Stat label="Setores atendidos" value="12" />
             <Stat label="Líderes formados" value="300+" />
           </div>
+
+          <div className="mt-10 hidden lg:block relative aspect-[16/10] overflow-hidden">
+            <img
+              src={seatedImg}
+              alt="Raphael Velozo"
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 ring-1 ring-[var(--deep)]/10" />
+          </div>
         </div>
       </div>
     </section>
