@@ -263,7 +263,19 @@ function Authority() {
   return (
     <section id="autoridade" className="py-24 lg:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16">
-        <div className="lg:col-span-5">
+        <div className="hidden lg:block lg:col-span-5">
+          <div className="relative w-full">
+            <img
+              src={seatedImg}
+              alt="Raphael Velozo"
+              loading="lazy"
+              className="w-full h-auto object-contain"
+            />
+            <div className="absolute inset-0 ring-1 ring-[var(--deep)]/10 pointer-events-none" />
+          </div>
+        </div>
+
+        <div className="lg:col-span-7">
           <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
             Quem conduz
           </p>
@@ -277,7 +289,7 @@ function Authority() {
             e direção de unidades educacionais. Hoje, esse repertório se traduz em consultoria
             objetiva para empresários que precisam de método, não de palco.
           </p>
-          <div className="mt-10 relative aspect-[4/5] overflow-hidden max-w-sm">
+          <div className="mt-10 relative aspect-[4/5] overflow-hidden max-w-sm lg:hidden">
             <img
               src={seatedImg}
               alt="Raphael Velozo"
@@ -286,10 +298,8 @@ function Authority() {
             />
             <div className="absolute inset-0 ring-1 ring-[var(--deep)]/10" />
           </div>
-        </div>
 
-        <div className="lg:col-span-7">
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-[var(--border)] border border-[var(--border)]">
+          <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-px bg-[var(--border)] border border-[var(--border)]">
             {marks.map((m) => (
               <div
                 key={m}
