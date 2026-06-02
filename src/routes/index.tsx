@@ -277,7 +277,7 @@ function Authority() {
             e direção de unidades educacionais. Hoje, esse repertório se traduz em consultoria
             objetiva para empresários que precisam de método, não de palco.
           </p>
-          <div className="mt-10 relative aspect-[4/5] overflow-hidden max-w-sm">
+          <div className="mt-10 relative aspect-[4/5] overflow-hidden max-w-sm lg:hidden">
             <img
               src={seatedImg}
               alt="Raphael Velozo"
