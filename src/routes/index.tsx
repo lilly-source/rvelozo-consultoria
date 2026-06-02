@@ -359,13 +359,13 @@ function Services() {
   ];
 
   return (
-    <section id="servicos" className="bg-[var(--muted)] py-24 lg:py-32">
+    <section id="servicos" className="bg-[var(--deep)] text-[#E7E1D2] py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-3xl">
-          <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
+          <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--sand)]">
             Frentes de trabalho
           </p>
-          <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-[var(--deep)] text-balance">
+          <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-white text-balance">
             Três caminhos. Uma mesma exigência de método.
           </h2>
         </div>
@@ -374,14 +374,14 @@ function Services() {
           {services.map(({ icon: Icon, title, desc, cta }) => (
             <article
               key={title}
-              className="group bg-background border border-[var(--border)] p-8 lg:p-10 flex flex-col hover:border-[var(--institutional)] transition-colors"
+              className="group bg-[var(--deep)] border border-white/10 p-8 lg:p-10 flex flex-col hover:border-[var(--sand)] transition-colors"
             >
-              <Icon className="h-6 w-6 text-[var(--gold)]" strokeWidth={1.4} />
-              <h3 className="mt-8 font-serif text-2xl text-[var(--deep)]">{title}</h3>
-              <p className="mt-4 text-sm leading-relaxed text-[var(--ink-soft)] flex-1">{desc}</p>
+              <Icon className="h-6 w-6 text-[var(--sand)]" strokeWidth={1.4} />
+              <h3 className="mt-8 font-serif text-2xl text-white">{title}</h3>
+              <p className="mt-4 text-sm leading-relaxed text-[#B8B19E] flex-1">{desc}</p>
               <a
                 href="#contato"
-                className="mt-8 inline-flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-[var(--deep)] border-b border-[var(--gold)] pb-1 self-start group-hover:text-[var(--institutional)] transition-colors"
+                className="mt-8 inline-flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-[#E7E1D2] border-b border-[var(--gold)] pb-1 self-start group-hover:text-[var(--sand)] transition-colors"
               >
                 {cta}
                 <ArrowUpRight className="h-3.5 w-3.5" />
