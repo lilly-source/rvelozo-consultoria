@@ -343,18 +343,21 @@ function Services() {
       title: "Mentoria",
       desc: "Encontros estratégicos individuais para empresários que precisam de clareza, direção e um sparring experiente ao lado.",
       cta: "Conhecer mentoria",
+      href: "/mentoria",
     },
     {
       icon: ShieldCheck,
       title: "Consultoria",
       desc: "Imersão na operação para reorganizar gestão, processos, liderança e indicadores — com entregas concretas e cronograma.",
       cta: "Falar sobre consultoria",
+      href: "/consultoria",
     },
     {
       icon: LineChart,
       title: "Análise DISC",
       desc: "Mapeamento comportamental para decisões de equipe mais maduras: contratação, alocação, liderança e sucessão.",
       cta: "Aplicar análise DISC",
+      href: "/disc",
     },
   ];
 
