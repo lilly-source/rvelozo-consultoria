@@ -14,7 +14,7 @@ export function WhatsAppFloat() {
       className="fixed bottom-6 right-6 z-50 group animate-float-soft"
     >
       <span
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--deep)] text-[var(--background)] shadow-[0_8px_24px_-6px_rgba(16,32,66,0.35)] transition-all duration-500 ease-out group-hover:bg-[var(--gold)] group-hover:scale-[1.03] group-hover:shadow-[0_12px_32px_-6px_rgba(158,131,91,0.45)]"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--sand)] text-[var(--background)] shadow-[0_8px_24px_-6px_rgba(205,173,132,0.45)] transition-all duration-500 ease-out group-hover:bg-[var(--gold)] group-hover:scale-[1.03] group-hover:shadow-[0_12px_32px_-6px_rgba(158,131,91,0.45)]"
       >
         <WhatsappIcon className="h-6 w-6" />
       </span>
