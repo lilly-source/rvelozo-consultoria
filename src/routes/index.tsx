@@ -343,18 +343,21 @@ function Services() {
       title: "Mentoria",
       desc: "Encontros estratégicos individuais para empresários que precisam de clareza, direção e um sparring experiente ao lado.",
       cta: "Conhecer mentoria",
+      href: "/mentoria",
     },
     {
       icon: ShieldCheck,
       title: "Consultoria",
       desc: "Imersão na operação para reorganizar gestão, processos, liderança e indicadores — com entregas concretas e cronograma.",
       cta: "Falar sobre consultoria",
+      href: "/consultoria",
     },
     {
       icon: LineChart,
       title: "Análise DISC",
       desc: "Mapeamento comportamental para decisões de equipe mais maduras: contratação, alocação, liderança e sucessão.",
       cta: "Aplicar análise DISC",
+      href: "/disc",
     },
   ];
 
@@ -371,7 +374,7 @@ function Services() {
         </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-6 lg:gap-8">
-          {services.map(({ icon: Icon, title, desc, cta }) => (
+          {services.map(({ icon: Icon, title, desc, cta, href }) => (
             <article
               key={title}
               className="group bg-[var(--deep)] border border-white/10 p-8 lg:p-10 flex flex-col hover:border-[var(--sand)] transition-colors"
@@ -380,7 +383,7 @@ function Services() {
               <h3 className="mt-8 font-serif text-2xl text-white">{title}</h3>
               <p className="mt-4 text-sm leading-relaxed text-[#B8B19E] flex-1">{desc}</p>
               <a
-                href="#contato"
+                href={href}
                 className="mt-8 inline-flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-[#E7E1D2] border-b border-[var(--gold)] pb-1 self-start group-hover:text-[var(--sand)] transition-colors"
               >
                 {cta}

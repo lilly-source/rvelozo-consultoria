@@ -16,10 +16,10 @@ export function SiteFooter() {
           <div className="text-sm">
             <p className="text-xs uppercase tracking-[0.24em] text-[var(--sand)] mb-4">Navegação</p>
             <ul className="space-y-2">
-              <li><a href="#metodo" className="hover:text-white transition">Método</a></li>
-              <li><a href="#autoridade" className="hover:text-white transition">Autoridade</a></li>
-              <li><a href="#servicos" className="hover:text-white transition">Serviços</a></li>
-              <li><a href="#contato" className="hover:text-white transition">Contato</a></li>
+              <li><a href="/consultoria" className="hover:text-white transition">Consultoria</a></li>
+              <li><a href="/mentoria" className="hover:text-white transition">Mentoria</a></li>
+              <li><a href="/disc" className="hover:text-white transition">DISC</a></li>
+              <li><a href="/#contato" className="hover:text-white transition">Contato</a></li>
             </ul>
           </div>
           <div className="text-sm">

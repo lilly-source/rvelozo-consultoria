@@ -9,8 +9,26 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as MentoriaRouteImport } from './routes/mentoria'
+import { Route as DiscRouteImport } from './routes/disc'
+import { Route as ConsultoriaRouteImport } from './routes/consultoria'
 import { Route as IndexRouteImport } from './routes/index'
 
+const MentoriaRoute = MentoriaRouteImport.update({
+  id: '/mentoria',
+  path: '/mentoria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DiscRoute = DiscRouteImport.update({
+  id: '/disc',
+  path: '/disc',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConsultoriaRoute = ConsultoriaRouteImport.update({
+  id: '/consultoria',
+  path: '/consultoria',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +37,61 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/consultoria': typeof ConsultoriaRoute
+  '/disc': typeof DiscRoute
+  '/mentoria': typeof MentoriaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/consultoria': typeof ConsultoriaRoute
+  '/disc': typeof DiscRoute
+  '/mentoria': typeof MentoriaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/consultoria': typeof ConsultoriaRoute
+  '/disc': typeof DiscRoute
+  '/mentoria': typeof MentoriaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/consultoria' | '/disc' | '/mentoria'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/consultoria' | '/disc' | '/mentoria'
+  id: '__root__' | '/' | '/consultoria' | '/disc' | '/mentoria'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ConsultoriaRoute: typeof ConsultoriaRoute
+  DiscRoute: typeof DiscRoute
+  MentoriaRoute: typeof MentoriaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/mentoria': {
+      id: '/mentoria'
+      path: '/mentoria'
+      fullPath: '/mentoria'
+      preLoaderRoute: typeof MentoriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/disc': {
+      id: '/disc'
+      path: '/disc'
+      fullPath: '/disc'
+      preLoaderRoute: typeof DiscRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/consultoria': {
+      id: '/consultoria'
+      path: '/consultoria'
+      fullPath: '/consultoria'
+      preLoaderRoute: typeof ConsultoriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +104,9 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ConsultoriaRoute: ConsultoriaRoute,
+  DiscRoute: DiscRoute,
+  MentoriaRoute: MentoriaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
