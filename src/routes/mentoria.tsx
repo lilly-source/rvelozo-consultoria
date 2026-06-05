@@ -10,7 +10,7 @@ import {
   Workflow,
   Compass,
   Brain,
-  Map,
+  Map as MapIcon,
   Target,
   Sparkles,
   TrendingUp,
@@ -283,7 +283,7 @@ function HowItWorks() {
 function Pillars() {
   const pillars = [
     { icon: Brain, title: "Mentalidade" },
-    { icon: Map, title: "Planejamento" },
+    { icon: MapIcon, title: "Planejamento" },
     { icon: Target, title: "Estratégia" },
   ];
   return (
