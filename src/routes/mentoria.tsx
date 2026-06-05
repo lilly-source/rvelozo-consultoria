@@ -10,7 +10,7 @@ import {
   Workflow,
   Compass,
   Brain,
-  Map,
+  Map as MapIcon,
   Target,
   Sparkles,
   TrendingUp,
