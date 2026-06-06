@@ -12,6 +12,7 @@ export function InternalPage({ eyebrow, pageLabel }: Props) {
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
       <SiteHeader />
+      <main>
 
       {/* HERO */}
       <section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32">
