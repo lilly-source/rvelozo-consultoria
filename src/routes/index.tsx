@@ -47,13 +47,15 @@ function Home() {
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
       <SiteHeader />
-      <Hero />
-      <Pains />
-      <Transformation />
-      <Method />
-      <Authority />
-      <Services />
-      <FinalCTA />
+      <main>
+        <Hero />
+        <Pains />
+        <Transformation />
+        <Method />
+        <Authority />
+        <Services />
+        <FinalCTA />
+      </main>
       <SiteFooter />
       <WhatsAppFloat />
     </div>

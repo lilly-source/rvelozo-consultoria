@@ -35,14 +35,16 @@ function MentoriaPage() {
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
       <SiteHeader />
-      <Hero />
-      <Problem />
-      <Mindset />
-      <AboutMentor />
-      <HowItWorks />
-      <Pillars />
-      <Benefits />
-      <FinalCTA />
+      <main>
+        <Hero />
+        <Problem />
+        <Mindset />
+        <AboutMentor />
+        <HowItWorks />
+        <Pillars />
+        <Benefits />
+        <FinalCTA />
+      </main>
       <SiteFooter />
       <WhatsAppFloat />
     </div>

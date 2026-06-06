@@ -37,14 +37,16 @@ function DiscPage() {
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
       <SiteHeader />
-      <Hero />
-      <Challenges />
-      <WhatIsDisc />
-      <Profiles />
-      <Benefits />
-      <DiscInNumbers />
-      <Applications />
-      <FinalCTA />
+      <main>
+        <Hero />
+        <Challenges />
+        <WhatIsDisc />
+        <Profiles />
+        <Benefits />
+        <DiscInNumbers />
+        <Applications />
+        <FinalCTA />
+      </main>
       <SiteFooter />
       <WhatsAppFloat />
     </div>
