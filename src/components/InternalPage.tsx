@@ -137,6 +137,7 @@ export function InternalPage({ eyebrow, pageLabel }: Props) {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
       <WhatsAppFloat />
     </div>
