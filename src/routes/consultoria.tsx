@@ -42,14 +42,16 @@ function ConsultoriaPage() {
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
       <SiteHeader />
-      <Hero />
-      <Diagnostico />
-      <CicloSobrevivente />
-      <Liberdade />
-      <Metodologia />
-      <Caminho />
-      <Resultados />
-      <FinalCTA />
+      <main>
+        <Hero />
+        <Diagnostico />
+        <CicloSobrevivente />
+        <Liberdade />
+        <Metodologia />
+        <Caminho />
+        <Resultados />
+        <FinalCTA />
+      </main>
       <SiteFooter />
       <WhatsAppFloat />
     </div>
