@@ -4,21 +4,13 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import {
   ArrowUpRight,
-  HelpCircle,
   Users,
   MessageSquare,
-  AlertTriangle,
-  Flame,
   Sparkles,
-  ShieldCheck,
   ClipboardCheck,
   Compass,
   TrendingUp,
   Brain,
-  Handshake,
-  Briefcase,
-  UserCheck,
-  Building2,
 } from "lucide-react";
 
 export const Route = createFileRoute("/disc")({
