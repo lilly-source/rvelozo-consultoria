@@ -137,42 +137,73 @@ function Challenges() {
 
 /* ---------------- 3. O QUE É DISC ---------------- */
 function WhatIsDisc() {
+  const profiles = [
+    {
+      letter: "D",
+      title: "Dominância",
+      text: "Foco em resultados, desafios e decisões rápidas",
+      color: "#B23A48", // vermelho institucional
+    },
+    {
+      letter: "I",
+      title: "Influência",
+      text: "Foco em pessoas, comunicação e relacionamento",
+      color: "#C9A24A", // amarelo dourado
+    },
+    {
+      letter: "S",
+      title: "Estabilidade",
+      text: "Foco em harmonia, consistência e cooperação",
+      color: "#6B8E6F", // verde sálvia
+    },
+    {
+      letter: "C",
+      title: "Conformidade",
+      text: "Foco em qualidade, análise e precisão",
+      color: "#3C5A7A", // azul institucional
+    },
+  ];
   return (
     <section className="py-24 lg:py-32 bg-background">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-12">
-        <div className="lg:col-span-7">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="lg:col-span-6">
           <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-            [Seção · O que é DISC]
+            O que é DISC
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-[var(--deep)] text-balance">
-            [Título educativo]
+            Comportamento em resultado.
           </h2>
           <div className="hairline my-10" />
           <p className="text-base lg:text-lg text-[var(--ink-soft)] leading-relaxed">
-            [Explicação principal será inserida posteriormente]
+            O DISC é um mapeamento de perfil comportamental que revela como você age, decide, se comunica e reage sob pressão — e como ler as pessoas ao seu redor com precisão.
           </p>
           <p className="mt-6 text-base lg:text-lg text-[var(--ink-soft)] leading-relaxed">
-            [Continuação da explicação]
+            Utilizado por líderes e empresas de alto desempenho no mundo inteiro, é a ferramenta mais prática para transformar comportamento em resultado.
           </p>
         </div>
 
-        <aside className="lg:col-span-5 flex flex-col gap-6">
-          <div className="bg-[var(--muted)] border-l-2 border-[var(--gold)] p-10 flex-1">
-            <p className="text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-              [Bloco de destaque]
-            </p>
-            <p className="mt-6 font-serif text-2xl leading-[1.2] text-[var(--deep)] text-balance">
-              [Argumento central sobre DISC]
-            </p>
-          </div>
-          <div className="bg-[var(--deep)] text-[#E7E1D2] p-10">
-            <p className="text-[11px] uppercase tracking-[0.32em] text-[var(--sand)]">
-              [Área institucional]
-            </p>
-            <p className="mt-6 text-sm leading-relaxed text-[#C8C1AE]">
-              [Conteúdo institucional será inserido posteriormente]
-            </p>
-          </div>
+        <aside className="lg:col-span-6 grid grid-cols-2 gap-px bg-[var(--border)] border border-[var(--border)]">
+          {profiles.map(({ letter, title, text, color }) => (
+            <article
+              key={letter}
+              className="bg-background p-6 lg:p-8 flex flex-col border-t-2"
+              style={{ borderTopColor: color }}
+            >
+              <div className="flex items-baseline gap-3">
+                <span
+                  className="font-serif text-5xl leading-none"
+                  style={{ color }}
+                >
+                  {letter}
+                </span>
+                <span className="h-px flex-1" style={{ backgroundColor: `${color}55` }} />
+              </div>
+              <h3 className="mt-5 font-serif text-xl text-[var(--deep)]">{title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">
+                {text}
+              </p>
+            </article>
+          ))}
         </aside>
       </div>
     </section>
