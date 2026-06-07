@@ -60,19 +60,19 @@ function Hero() {
           Análise DISC
         </p>
         <h1 className="mt-8 font-serif text-[2.6rem] sm:text-5xl lg:text-[3.75rem] leading-[1.08] text-[var(--deep)] text-balance">
-          [Título principal da análise DISC]
+          Potencialize seus resultados com Análise DISC
         </h1>
         <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[var(--ink-soft)] text-pretty">
-          [Subtítulo será inserido posteriormente]
+          Destrave a sua liderança e pare de apagar incêndios todos os dias. Aprenda a identificar seus pontos fortes, compreenda o que trava sua equipe e leia seus clientes com precisão.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
           <a
-            href="https://wa.me/5521964454543?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico."
+            href="https://wa.me/5521964454543?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20minha%20An%C3%A1lise%20DISC."
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-2 bg-[var(--deep)] text-[var(--background)] px-7 py-4 text-sm tracking-wide hover:bg-[var(--institutional)] transition-colors"
           >
-            [CTA principal]
+            Eu quero
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
         </div>
