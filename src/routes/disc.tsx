@@ -84,38 +84,51 @@ function Hero() {
 /* ---------------- 2. PRINCIPAIS DESAFIOS ---------------- */
 function Challenges() {
   const items = [
-    { icon: HelpCircle, title: "[Pergunta recorrente]" },
-    { icon: Users, title: "[Conflitos de equipe]" },
-    { icon: MessageSquare, title: "[Falhas de comunicação]" },
-    { icon: AlertTriangle, title: "[Decisões equivocadas]" },
-    { icon: Flame, title: "[Desgaste de liderança]" },
-    { icon: Compass, title: "[Falta de critério]" },
+    {
+      icon: Users,
+      title: "Equipe que não entrega",
+      text: "Por que minha equipe não entrega o que espero, mesmo com tanto esforço?",
+    },
+    {
+      icon: MessageSquare,
+      title: "Conversas em conflito",
+      text: "Por que as mesmas conversas sempre terminam em conflito?",
+    },
+    {
+      icon: TrendingUp,
+      title: "Resultados que não evoluem",
+      text: "Por que trabalho muito mas os resultados não evoluem?",
+    },
   ];
   return (
     <section className="bg-[var(--deep)] text-[#E7E1D2] py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-3xl">
           <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--sand)]">
-            [Seção · Principais desafios]
+            Desafios
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-white text-balance">
-            [Título dos desafios]
+            Você já se perguntou?
           </h2>
-          <p className="mt-6 text-base lg:text-lg leading-relaxed text-[#C8C1AE] max-w-2xl">
-            [Conteúdo será inserido posteriormente]
-          </p>
         </div>
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10">
-          {items.map(({ icon: Icon, title }) => (
+          {items.map(({ icon: Icon, title, text }) => (
             <div key={title} className="bg-[var(--deep)] p-8 lg:p-10">
               <Icon className="h-5 w-5 text-[var(--sand)]" strokeWidth={1.5} />
               <h3 className="mt-6 font-serif text-xl text-white">{title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-[#B8B19E]">
-                [Conteúdo será inserido posteriormente]
+                {text}
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 flex items-center gap-6 max-w-3xl">
+          <Compass className="h-6 w-6 text-[var(--sand)] shrink-0" strokeWidth={1.4} />
+          <p className="font-serif text-xl sm:text-2xl leading-snug text-white italic">
+            Liderar sem se conhecer é navegar sem bússola.
+          </p>
         </div>
       </div>
     </section>
