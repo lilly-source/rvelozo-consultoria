@@ -41,10 +41,8 @@ function DiscPage() {
         <Hero />
         <Challenges />
         <WhatIsDisc />
-        <Profiles />
         <Benefits />
         <DiscInNumbers />
-        <Applications />
         <FinalCTA />
       </main>
       <SiteFooter />
