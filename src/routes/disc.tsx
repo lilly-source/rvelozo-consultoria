@@ -25,9 +25,9 @@ export const Route = createFileRoute("/disc")({
   head: () => ({
     meta: [
       { title: "Análise DISC · R. Velozo" },
-      { name: "description", content: "[Descrição será inserida posteriormente]" },
-      { property: "og:title", content: "Análise DISC · R. Velozo" },
-      { property: "og:description", content: "[Descrição será inserida posteriormente]" },
+      { name: "description", content: "Destrave sua liderança com a Análise DISC: identifique pontos fortes, compreenda sua equipe e leia clientes com precisão." },
+      { property: "og:title", content: "Potencialize seus resultados com Análise DISC" },
+      { property: "og:description", content: "Destrave sua liderança com a Análise DISC: identifique pontos fortes, compreenda sua equipe e leia clientes com precisão." },
     ],
   }),
   component: DiscPage,
