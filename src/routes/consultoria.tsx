@@ -300,20 +300,6 @@ function Metodologia() {
 
 /* ---------------- 6. COMO VAMOS CAMINHAR JUNTOS ---------------- */
 function Caminho() {
-  const modes = [
-    {
-      icon: Compass,
-      eyebrow: "Mentoria",
-      title: "Te guio pelo caminho que já trilhei.",
-      desc: "Foco no SEU desenvolvimento como líder.",
-    },
-    {
-      icon: Settings,
-      eyebrow: "Consultoria",
-      title: "Entro no seu negócio para ajustar as engrenagens.",
-      desc: "Foco na SOLUÇÃO de problemas.",
-    },
-  ];
   return (
     <section className="py-24 lg:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
