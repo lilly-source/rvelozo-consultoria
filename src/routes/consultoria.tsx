@@ -198,30 +198,46 @@ function CicloSobrevivente() {
 /* ---------------- 4. LIBERDADE PROFISSIONAL ---------------- */
 function Liberdade() {
   const items = [
-    { icon: Wallet, title: "Lucro" },
-    { icon: Clock, title: "Tempo" },
-    { icon: Users, title: "Equipe" },
-    { icon: TrendingUp, title: "Crescimento" },
+    {
+      icon: Wallet,
+      title: "Lucro Real",
+      desc: "Previsibilidade no caixa todo mês.",
+    },
+    {
+      icon: Clock,
+      title: "Tempo de Vida",
+      desc: "Família e lazer como prioridade.",
+    },
+    {
+      icon: Users,
+      title: "Equipe Autônoma",
+      desc: "Trabalham sem você precisar vigiar.",
+    },
+    {
+      icon: TrendingUp,
+      title: "Crescimento Focado",
+      desc: "Você foca apenas no que importa.",
+    },
   ];
   return (
     <section className="py-24 lg:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-3xl">
           <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-            [Seção · Liberdade profissional]
+            Liberdade profissional
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-[var(--deep)] text-balance">
-            [Título da liberdade profissional]
+            O que é Liberdade Profissional para você?
           </h2>
         </div>
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[var(--border)] border border-[var(--border)]">
-          {items.map(({ icon: Icon, title }) => (
+          {items.map(({ icon: Icon, title, desc }) => (
             <div key={title} className="bg-background p-8 lg:p-10">
               <Icon className="h-5 w-5 text-[var(--gold)]" strokeWidth={1.5} />
               <h3 className="mt-6 font-serif text-xl text-[var(--deep)]">{title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">
-                [Conteúdo será inserido posteriormente]
+                {desc}
               </p>
             </div>
           ))}
