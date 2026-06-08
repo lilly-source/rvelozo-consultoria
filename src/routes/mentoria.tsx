@@ -52,26 +52,36 @@ function MentoriaPage() {
 function Hero() {
   return (
     <section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
-      <div className="mx-auto max-w-5xl px-6 lg:px-10">
-        <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-          Mentoria
-        </p>
-        <h1 className="mt-8 font-serif text-[2.6rem] sm:text-5xl lg:text-[3.75rem] leading-[1.08] text-[var(--deep)] text-balance">
-          Construa sua Trajetória de Alta Performance
-        </h1>
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[var(--ink-soft)] text-pretty">
-          Forme uma equipe que veste a camisa de verdade da sua empresa e tenha mais liberdade.
-        </p>
-        <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <a
-            href="https://wa.me/5521964454543?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center justify-center gap-2 bg-[var(--deep)] text-[var(--background)] px-7 py-4 text-sm tracking-wide hover:bg-[var(--institutional)] transition-colors"
-          >
-            Eu quero
-            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </a>
+      <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
+        <div className="lg:col-span-7">
+          <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
+            Mentoria
+          </p>
+          <h1 className="mt-8 font-serif text-[2.6rem] sm:text-5xl lg:text-[3.75rem] leading-[1.08] text-[var(--deep)] text-balance">
+            Construa sua Trajetória de Alta Performance
+          </h1>
+          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[var(--ink-soft)] text-pretty">
+            Forme uma equipe que veste a camisa de verdade da sua empresa e tenha mais liberdade.
+          </p>
+          <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            <a
+              href="https://wa.me/5521964454543?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center gap-2 bg-[var(--deep)] text-[var(--background)] px-7 py-4 text-sm tracking-wide hover:bg-[var(--institutional)] transition-colors"
+            >
+              Eu quero
+              <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
+          </div>
+        </div>
+        <div className="lg:col-span-5">
+          <img
+            src={heroPhoto.url}
+            alt="R. Velozo"
+            loading="eager"
+            className="w-full h-auto object-contain"
+          />
         </div>
       </div>
     </section>
