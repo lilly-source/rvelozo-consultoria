@@ -416,14 +416,17 @@ function FinalCTA() {
     <section className="py-28 lg:py-36 bg-background">
       <div className="mx-auto max-w-4xl px-6 lg:px-10 text-center">
         <p className="gold-rule inline-block text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-          [Seção · CTA Final]
+          Próximo passo
         </p>
         <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-[var(--deep)] text-balance">
-          [Título do CTA Final]
+          O próximo nível está a uma decisão de distância.
         </h2>
-        <p className="mt-6 text-base lg:text-lg text-[var(--ink-soft)] leading-relaxed max-w-2xl mx-auto">
-          [Conteúdo será inserido posteriormente]
-        </p>
+        <div className="mt-8 max-w-2xl mx-auto space-y-4 text-base lg:text-lg text-[var(--ink-soft)] leading-relaxed">
+          <p>Eu não vendo apenas planilhas ou conselhos.</p>
+          <p>
+            Eu vendo o tempo que você vai ganhar de volta e a segurança de um negócio.
+          </p>
+        </div>
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="https://wa.me/5521964454543?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico."
@@ -431,7 +434,7 @@ function FinalCTA() {
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-2 bg-[var(--deep)] text-[var(--background)] px-7 py-4 text-sm tracking-wide hover:bg-[var(--institutional)] transition-colors"
           >
-            [CTA WhatsApp]
+            Quero dar o próximo passo
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
         </div>
