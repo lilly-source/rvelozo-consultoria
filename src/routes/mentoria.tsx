@@ -12,10 +12,6 @@ import {
   Brain,
   Map as MapIcon,
   Target,
-  Sparkles,
-  TrendingUp,
-  ShieldCheck,
-  LineChart,
   LayoutGrid,
 } from "lucide-react";
 
