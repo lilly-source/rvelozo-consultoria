@@ -36,7 +36,7 @@ function ConsultoriaPage() {
     <div id="top" className="min-h-screen bg-background text-foreground">
       <SiteHeader />
       <main>
-        <Hero />
+        
         <Diagnostico />
         <CicloSobrevivente />
         <Liberdade />
