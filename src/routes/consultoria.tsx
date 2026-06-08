@@ -6,13 +6,10 @@ import {
   ArrowUpRight,
   HelpCircle,
   AlertTriangle,
-  Workflow,
   Users,
   Compass,
-  Flame,
   CloudFog,
   BatteryLow,
-  TrendingDown,
   TrendingUp,
   Clock,
   Wallet,
@@ -20,10 +17,6 @@ import {
   Settings,
   LineChart,
   GitCompare,
-  Target,
-  BarChart3,
-  ShieldCheck,
-  Sparkles,
 } from "lucide-react";
 
 export const Route = createFileRoute("/consultoria")({
