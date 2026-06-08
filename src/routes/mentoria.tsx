@@ -23,9 +23,9 @@ export const Route = createFileRoute("/mentoria")({
   head: () => ({
     meta: [
       { title: "Mentoria · R. Velozo" },
-      { name: "description", content: "[Descrição será inserida posteriormente]" },
+      { name: "description", content: "Construa sua trajetória de alta performance: forme uma equipe que veste a camisa de verdade e conquiste mais liberdade." },
       { property: "og:title", content: "Mentoria · R. Velozo" },
-      { property: "og:description", content: "[Descrição será inserida posteriormente]" },
+      { property: "og:description", content: "Construa sua trajetória de alta performance: forme uma equipe que veste a camisa de verdade e conquiste mais liberdade." },
     ],
   }),
   component: MentoriaPage,
@@ -60,10 +60,10 @@ function Hero() {
           Mentoria
         </p>
         <h1 className="mt-8 font-serif text-[2.6rem] sm:text-5xl lg:text-[3.75rem] leading-[1.08] text-[var(--deep)] text-balance">
-          [Título principal da mentoria]
+          Construa sua Trajetória de Alta Performance
         </h1>
         <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[var(--ink-soft)] text-pretty">
-          [Subtítulo será inserido posteriormente]
+          Forme uma equipe que veste a camisa de verdade da sua empresa e tenha mais liberdade.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
           <a
@@ -72,7 +72,7 @@ function Hero() {
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-2 bg-[var(--deep)] text-[var(--background)] px-7 py-4 text-sm tracking-wide hover:bg-[var(--institutional)] transition-colors"
           >
-            [CTA principal]
+            Eu quero
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
         </div>
@@ -84,34 +84,48 @@ function Hero() {
 /* ---------------- 2. PROBLEMA ---------------- */
 function Problem() {
   const items = [
-    { icon: BatteryLow, title: "[Sobrecarga]" },
-    { icon: Workflow, title: "[Dependência operacional]" },
-    { icon: Users, title: "[Dificuldade de delegação]" },
-    { icon: Compass, title: "[Perda de liberdade]" },
+    {
+      icon: BatteryLow,
+      title: "Sobrecarga",
+      desc: "Noites mal dormidas e a sensação sufocante de que, se você parar, tudo para.",
+    },
+    {
+      icon: Workflow,
+      title: "Dependência operacional",
+      desc: "A operação inteira gira em torno de você, sem espaço para pensar estrategicamente.",
+    },
+    {
+      icon: Users,
+      title: "Dificuldade de delegação",
+      desc: "Equipe que não assume o processo e parece nunca vestir a camisa de verdade.",
+    },
+    {
+      icon: Compass,
+      title: "Perda de liberdade",
+      desc: "Tempo escorrendo entre os dedos e a vida pessoal sempre em segundo plano.",
+    },
   ];
   return (
     <section className="bg-[var(--deep)] text-[#E7E1D2] py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-3xl">
           <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--sand)]">
-            [Seção · O problema]
+            Mentalidade operacional
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-white text-balance">
-            [Título da dor do empresário]
+            Muitos profissionais vivem presos na Mentalidade Operacional.
           </h2>
           <p className="mt-6 text-base lg:text-lg leading-relaxed text-[#C8C1AE] max-w-2xl">
-            [Conteúdo será inserido posteriormente]
+            É aquela sensação sufocante de que, se você parar, tudo para. Noites mal dormidas, dificuldade real em delegar e uma equipe que parece nunca vestir a camisa. Se você se sente travado no dia a dia, perdendo sua liberdade e vendo o tempo escorrer entre os dedos, você está no lugar certo para mudar esse jogo.
           </p>
         </div>
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10">
-          {items.map(({ icon: Icon, title }) => (
+          {items.map(({ icon: Icon, title, desc }) => (
             <div key={title} className="bg-[var(--deep)] p-8 lg:p-10">
               <Icon className="h-5 w-5 text-[var(--sand)]" strokeWidth={1.5} />
               <h3 className="mt-6 font-serif text-xl text-white">{title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-[#B8B19E]">
-                [Conteúdo será inserido posteriormente]
-              </p>
+              <p className="mt-3 text-sm leading-relaxed text-[#B8B19E]">{desc}</p>
             </div>
           ))}
         </div>
@@ -127,31 +141,31 @@ function Mindset() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-7">
           <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-            [Seção · Mentalidade operacional]
+            Do operacional ao estratégico
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-[var(--deep)] text-balance">
-            [Título editorial]
+            Sair da rotina que sufoca e assumir o lugar de quem realmente lidera.
           </h2>
           <div className="hairline my-10" />
           <p className="text-base lg:text-lg text-[var(--ink-soft)] leading-relaxed">
-            [Texto principal será inserido posteriormente]
+            Muitos profissionais vivem presos na Mentalidade Operacional. É aquela sensação sufocante de que, se você parar, tudo para. Noites mal dormidas, dificuldade real em delegar e uma equipe que parece nunca vestir a camisa.
           </p>
           <p className="mt-6 text-base lg:text-lg text-[var(--ink-soft)] leading-relaxed">
-            [Continuação do texto principal]
+            Se você se sente travado no dia a dia, perdendo sua liberdade e vendo o tempo escorrer entre os dedos, você está no lugar certo para mudar esse jogo.
           </p>
         </div>
 
         <aside className="lg:col-span-5">
           <div className="bg-[var(--muted)] border-l-2 border-[var(--gold)] p-10 lg:p-12 h-full flex flex-col justify-center">
             <p className="text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-              [Bloco de destaque]
+              O ponto de virada
             </p>
             <p className="mt-6 font-serif text-2xl lg:text-3xl leading-[1.2] text-[var(--deep)] text-balance">
-              [Argumento central da seção]
+              Liberdade começa quando a empresa para de depender exclusivamente de você.
             </p>
             <div className="hairline my-8" />
             <p className="text-sm leading-relaxed text-[var(--ink-soft)]">
-              [Suporte ao argumento será inserido posteriormente]
+              A mentoria estrutura mentalidade, planejamento e estratégia para que a operação ande sem precisar do empresário em todas as decisões.
             </p>
           </div>
         </aside>
