@@ -124,53 +124,71 @@ function Diagnostico() {
   );
 }
 
-/* ---------------- 3. CICLO DO SOBREVIVENTE OPERACIONAL ---------------- */
+/* ---------------- 3. CICLO DO SOBREVIVENTE ---------------- */
 function CicloSobrevivente() {
   const stages = [
-    { icon: CloudFog, label: "Caos" },
-    { icon: HelpCircle, label: "Incerteza" },
+    { icon: CloudFog, label: "Desordem" },
+    { icon: AlertTriangle, label: "Preocupação" },
     { icon: BatteryLow, label: "Cansaço" },
-    { icon: TrendingDown, label: "Falta de crescimento" },
+    { icon: HelpCircle, label: "Incerteza" },
+  ];
+  const causes = [
+    "Sem tempo para pensar em crescimento",
+    "Sem processos e equipe treinada",
+    "Sem clareza financeira",
   ];
   return (
     <section className="bg-[var(--deep)] text-[#E7E1D2] py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-3xl">
           <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--sand)]">
-            [Seção · Ciclo do sobrevivente operacional]
+            O ciclo do sobrevivente
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-white text-balance">
-            [Título do ciclo]
+            O ciclo que mantém o empresário operacional preso à rotina.
           </h2>
-          <p className="mt-6 text-base lg:text-lg leading-relaxed text-[#C8C1AE] max-w-2xl">
-            [Conteúdo será inserido posteriormente]
-          </p>
         </div>
 
-        <div className="mt-16 relative">
-          <div className="hidden md:block absolute top-12 left-0 right-0 h-px bg-[var(--sand)]/30" />
-          <ol className="grid sm:grid-cols-2 md:grid-cols-4 gap-px md:gap-0 bg-white/10 md:bg-transparent border md:border-0 border-white/10">
-            {stages.map(({ icon: Icon, label }, i) => (
-              <li
-                key={label}
-                className="bg-[var(--deep)] p-8 lg:p-10 md:bg-transparent relative"
-              >
-                <div className="flex items-baseline gap-4">
-                  <span className="font-serif text-5xl text-[var(--sand)]">
-                    0{i + 1}
-                  </span>
-                  <span className="h-px flex-1 bg-[var(--sand)]/40 md:hidden" />
-                </div>
-                <div className="mt-6 inline-flex h-10 w-10 items-center justify-center border border-[var(--sand)]/40 bg-[var(--deep)] relative z-10">
-                  <Icon className="h-5 w-5 text-[var(--sand)]" strokeWidth={1.5} />
-                </div>
-                <h3 className="mt-6 font-serif text-2xl text-white">{label}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-[#B8B19E] max-w-xs">
-                  [Conteúdo será inserido posteriormente]
+        <div className="mt-16 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="lg:col-span-6 space-y-6">
+            {causes.map((cause) => (
+              <div key={cause} className="flex items-start gap-4">
+                <span className="mt-3 h-px w-8 bg-[var(--sand)] shrink-0" />
+                <p className="font-serif text-xl lg:text-2xl text-white leading-snug">
+                  {cause}
                 </p>
-              </li>
+              </div>
             ))}
-          </ol>
+          </div>
+
+          <div className="lg:col-span-6 relative aspect-square max-w-md mx-auto w-full">
+            <div className="absolute inset-0 rounded-full border border-[var(--sand)]/40" />
+            <div className="absolute inset-8 rounded-full border border-[var(--sand)]/20" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="font-serif text-sm uppercase tracking-[0.32em] text-[var(--sand)]">
+                Ciclo
+              </span>
+            </div>
+            {stages.map(({ icon: Icon, label }, i) => {
+              const angle = (i / stages.length) * 2 * Math.PI - Math.PI / 2;
+              const x = 50 + 50 * Math.cos(angle);
+              const y = 50 + 50 * Math.sin(angle);
+              return (
+                <div
+                  key={label}
+                  className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-2"
+                  style={{ left: `${x}%`, top: `${y}%` }}
+                >
+                  <div className="inline-flex h-12 w-12 items-center justify-center bg-[var(--deep)] border border-[var(--sand)]/60 rounded-full">
+                    <Icon className="h-5 w-5 text-[var(--sand)]" strokeWidth={1.5} />
+                  </div>
+                  <span className="font-serif text-base text-white whitespace-nowrap">
+                    {label}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
