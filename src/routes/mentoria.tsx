@@ -3,7 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import portraitImg from "@/assets/velozo-portrait.jpg";
-import heroPhoto from "@/assets/velozo-foto-05.png.asset.json";
+import heroPhoto from "@/assets/velozo-foto-05a.png.asset.json";
 import {
   ArrowUpRight,
   BatteryLow,
@@ -75,13 +75,16 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="lg:col-span-5">
-          <img
-            src={heroPhoto.url}
-            alt="R. Velozo"
-            loading="eager"
-            className="w-full h-auto object-contain"
-          />
+        <div className="lg:col-span-5 relative">
+          <div className="relative overflow-hidden rounded-2xl shadow-[0_30px_60px_-20px_rgba(15,23,42,0.35)] ring-1 ring-[var(--deep)]/5">
+            <img
+              src={heroPhoto.url}
+              alt="Raphael Velozo"
+              loading="eager"
+              className="w-full h-auto object-cover"
+            />
+            <div className="hidden lg:block absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-background to-transparent pointer-events-none" />
+          </div>
         </div>
       </div>
     </section>
