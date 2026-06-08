@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import portraitImg from "@/assets/velozo-portrait.jpg";
+import heroPhoto from "@/assets/velozo-foto-05.png.asset.json";
 import {
   ArrowUpRight,
   BatteryLow,
