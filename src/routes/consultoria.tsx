@@ -301,50 +301,66 @@ function Metodologia() {
 /* ---------------- 6. COMO VAMOS CAMINHAR JUNTOS ---------------- */
 function Caminho() {
   const modes = [
-    { label: "Mentoria", eyebrow: "[Modelo 01]" },
-    { label: "Consultoria", eyebrow: "[Modelo 02]" },
-    { label: "Combinação dos dois", eyebrow: "[Modelo 03]" },
+    {
+      icon: Compass,
+      eyebrow: "Mentoria",
+      title: "Te guio pelo caminho que já trilhei.",
+      desc: "Foco no SEU desenvolvimento como líder.",
+    },
+    {
+      icon: Settings,
+      eyebrow: "Consultoria",
+      title: "Entro no seu negócio para ajustar as engrenagens.",
+      desc: "Foco na SOLUÇÃO de problemas.",
+    },
   ];
   return (
     <section className="py-24 lg:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-3xl">
           <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-            [Seção · Como vamos caminhar juntos]
+            Como vamos caminhar juntos
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-[var(--deep)] text-balance">
-            [Título do modelo de trabalho]
+            Como eu vou caminhar com você?
           </h2>
-          <p className="mt-6 text-base lg:text-lg leading-relaxed text-[var(--ink-soft)] max-w-2xl">
-            [Conteúdo será inserido posteriormente]
-          </p>
         </div>
 
-        <div className="mt-16 grid md:grid-cols-3 gap-px bg-[var(--border)] border border-[var(--border)]">
-          {modes.map(({ label, eyebrow }) => (
-            <article key={label} className="bg-background p-8 lg:p-10 flex flex-col">
-              <p className="text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-                {eyebrow}
-              </p>
-              <h3 className="mt-6 font-serif text-2xl text-[var(--deep)]">{label}</h3>
-              <div className="hairline my-6" />
-              <ul className="space-y-3 text-sm leading-relaxed text-[var(--ink-soft)] flex-1">
-                {[1, 2, 3, 4].map((n) => (
-                  <li key={n} className="flex items-baseline gap-3">
-                    <GitCompare className="h-3 w-3 text-[var(--gold)] shrink-0" strokeWidth={1.5} />
-                    <span>[Característica {n}]</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-8 text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-                [Indicado para]
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">
-                [Conteúdo será inserido posteriormente]
-              </p>
-            </article>
+        <div className="mt-16 grid md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-6 items-stretch">
+          {modes.map(({ icon: Icon, eyebrow, title, desc }, i) => (
+            <>
+              <article
+                key={eyebrow}
+                className="bg-background border border-[var(--border)] p-8 lg:p-10 flex flex-col"
+              >
+                <Icon className="h-6 w-6 text-[var(--gold)]" strokeWidth={1.4} />
+                <p className="mt-6 text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
+                  {eyebrow}
+                </p>
+                <h3 className="mt-4 font-serif text-2xl text-[var(--deep)] leading-snug">
+                  {title}
+                </h3>
+                <div className="hairline my-6" />
+                <p className="text-sm leading-relaxed text-[var(--ink-soft)]">
+                  {desc}
+                </p>
+              </article>
+              {i === 0 && (
+                <div
+                  key="plus"
+                  className="flex items-center justify-center font-serif text-7xl lg:text-8xl text-[var(--gold)]"
+                  aria-hidden
+                >
+                  +
+                </div>
+              )}
+            </>
           ))}
         </div>
+
+        <p className="mt-16 text-center font-serif text-xl sm:text-2xl text-[var(--deep)] text-balance">
+          Resultado: o melhor dos dois mundos — Lucro, Crescimento e Previsão.
+        </p>
       </div>
     </section>
   );
