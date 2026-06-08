@@ -91,39 +91,34 @@ function Hero() {
 /* ---------------- 2. DIAGNÓSTICO ---------------- */
 function Diagnostico() {
   const items = [
-    { icon: HelpCircle, title: "[Pergunta estratégica 1]" },
-    { icon: AlertTriangle, title: "[Dor operacional 1]" },
-    { icon: Workflow, title: "[Pergunta estratégica 2]" },
-    { icon: Users, title: "[Dor operacional 2]" },
-    { icon: Compass, title: "[Pergunta estratégica 3]" },
-    { icon: Flame, title: "[Dor operacional 3]" },
+    { icon: Wallet, title: "Trabalha muito, mas não vê a cor do dinheiro?" },
+    { icon: AlertTriangle, title: "Sente que se você parar por um dia, tudo para?" },
+    { icon: GitCompare, title: "Técnica nota 10, mas gestão nota 4?" },
   ];
   return (
     <section className="py-24 lg:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-3xl">
           <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-            [Seção · Diagnóstico]
+            Diagnóstico
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-[var(--deep)] text-balance">
-            [Título do diagnóstico]
+            Você é dono do seu negócio ou seu negócio é seu dono?
           </h2>
-          <p className="mt-6 text-base lg:text-lg leading-relaxed text-[var(--ink-soft)] max-w-2xl">
-            [Conteúdo será inserido posteriormente]
-          </p>
         </div>
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--border)] border border-[var(--border)]">
           {items.map(({ icon: Icon, title }) => (
             <div key={title} className="bg-background p-8 lg:p-10">
               <Icon className="h-5 w-5 text-[var(--gold)]" strokeWidth={1.5} />
-              <h3 className="mt-6 font-serif text-xl text-[var(--deep)]">{title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">
-                [Conteúdo será inserido posteriormente]
-              </p>
+              <h3 className="mt-6 font-serif text-xl text-[var(--deep)] leading-snug">{title}</h3>
             </div>
           ))}
         </div>
+
+        <p className="mt-16 font-serif text-2xl sm:text-3xl text-[var(--deep)] text-balance max-w-3xl">
+          “Estar ocupado não é o mesmo que ser produtivo.”
+        </p>
       </div>
     </section>
   );
