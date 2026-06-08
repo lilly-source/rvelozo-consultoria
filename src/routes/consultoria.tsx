@@ -250,24 +250,36 @@ function Liberdade() {
 /* ---------------- 5. METODOLOGIA ---------------- */
 function Metodologia() {
   const pillars = [
-    { icon: Brain, title: "Mentalidade" },
-    { icon: Settings, title: "Processos" },
-    { icon: LineChart, title: "Finanças e Dados" },
+    {
+      icon: Brain,
+      title: "Mentalidade",
+      desc: "Da operação à liderança estratégica.",
+    },
+    {
+      icon: Settings,
+      title: "Processos",
+      desc: "O manual de crescimento do seu negócio.",
+    },
+    {
+      icon: LineChart,
+      title: "Finanças e Dados",
+      desc: "Transformando anotações em decisões que geram lucro.",
+    },
   ];
   return (
     <section className="bg-[var(--muted)] py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-3xl">
           <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-            [Seção · Metodologia]
+            Metodologia
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-[var(--deep)] text-balance">
-            [Título da metodologia]
+            Como vamos chegar lá?
           </h2>
         </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-6 lg:gap-8">
-          {pillars.map(({ icon: Icon, title }) => (
+          {pillars.map(({ icon: Icon, title, desc }) => (
             <article
               key={title}
               className="group bg-background border border-[var(--border)] p-8 lg:p-10 flex flex-col hover:border-[var(--gold)] transition-colors"
@@ -276,7 +288,7 @@ function Metodologia() {
               <h3 className="mt-8 font-serif text-2xl text-[var(--deep)]">{title}</h3>
               <div className="hairline my-6" />
               <p className="text-sm leading-relaxed text-[var(--ink-soft)] flex-1">
-                [Conteúdo será inserido posteriormente]
+                {desc}
               </p>
             </article>
           ))}
