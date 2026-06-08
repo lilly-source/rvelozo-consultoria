@@ -360,37 +360,50 @@ function Caminho() {
 
 /* ---------------- 7. RESULTADOS ---------------- */
 function Resultados() {
-  const metrics = [
-    { icon: BarChart3, title: "[Indicador]" },
-    { icon: Target, title: "[Métrica]" },
-    { icon: ShieldCheck, title: "[Resultado]" },
-    { icon: Sparkles, title: "[Transformação]" },
-  ];
   return (
     <section className="bg-[var(--deep)] text-[#E7E1D2] py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-3xl">
           <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--sand)]">
-            [Seção · Resultados]
+            Resultados
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-white text-balance">
-            [Título dos resultados]
+            O que dizem os mentorados.
           </h2>
         </div>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10">
-          {metrics.map(({ icon: Icon, title }) => (
-            <div key={title} className="bg-[var(--deep)] p-8 lg:p-10">
-              <Icon className="h-5 w-5 text-[var(--sand)]" strokeWidth={1.5} />
-              <p className="mt-6 font-serif text-4xl lg:text-5xl text-white">
-                [00]
-              </p>
-              <h3 className="mt-4 font-serif text-lg text-[var(--sand)]">{title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-[#B8B19E]">
-                [Conteúdo será inserido posteriormente]
-              </p>
-            </div>
-          ))}
+        <div className="mt-20 grid grid-cols-[1fr_auto_1fr] items-center gap-6 lg:gap-12 max-w-3xl mx-auto">
+          <div className="text-center">
+            <p className="font-serif text-7xl sm:text-8xl lg:text-9xl text-[var(--sand)] leading-none">
+              4
+            </p>
+            <p className="mt-4 text-[11px] uppercase tracking-[0.32em] text-[#B8B19E]">
+              Antes
+            </p>
+          </div>
+
+          <div className="flex items-center" aria-hidden>
+            <span className="h-px w-10 sm:w-16 lg:w-24 bg-[var(--sand)]" />
+            <ArrowUpRight className="h-6 w-6 text-[var(--sand)] -ml-1" strokeWidth={1.5} />
+          </div>
+
+          <div className="text-center">
+            <p className="font-serif text-7xl sm:text-8xl lg:text-9xl text-white leading-none">
+              10
+            </p>
+            <p className="mt-4 text-[11px] uppercase tracking-[0.32em] text-[var(--sand)]">
+              Depois
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-16 max-w-2xl mx-auto text-center space-y-4">
+          <p className="text-base lg:text-lg leading-relaxed text-[#C8C1AE]">
+            Esta é a evolução da nota que os próprios mentorados atribuem à sua evolução em Gestão.
+          </p>
+          <p className="font-serif text-xl sm:text-2xl text-white text-balance">
+            Da desordem à clareza estratégica.
+          </p>
         </div>
       </div>
     </section>
