@@ -327,36 +327,42 @@ function Caminho() {
         </div>
 
         <div className="mt-16 grid md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-6 items-stretch">
-          {modes.map(({ icon: Icon, eyebrow, title, desc }, i) => (
-            <>
-              <article
-                key={eyebrow}
-                className="bg-background border border-[var(--border)] p-8 lg:p-10 flex flex-col"
-              >
-                <Icon className="h-6 w-6 text-[var(--gold)]" strokeWidth={1.4} />
-                <p className="mt-6 text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-                  {eyebrow}
-                </p>
-                <h3 className="mt-4 font-serif text-2xl text-[var(--deep)] leading-snug">
-                  {title}
-                </h3>
-                <div className="hairline my-6" />
-                <p className="text-sm leading-relaxed text-[var(--ink-soft)]">
-                  {desc}
-                </p>
-              </article>
-              {i === 0 && (
-                <div
-                  key="plus"
-                  className="flex items-center justify-center font-serif text-7xl lg:text-8xl text-[var(--gold)]"
-                  aria-hidden
-                >
-                  +
-                </div>
-              )}
-            </>
-          ))}
+          <article className="bg-background border border-[var(--border)] p-8 lg:p-10 flex flex-col">
+            <Compass className="h-6 w-6 text-[var(--gold)]" strokeWidth={1.4} />
+            <p className="mt-6 text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
+              Mentoria
+            </p>
+            <h3 className="mt-4 font-serif text-2xl text-[var(--deep)] leading-snug">
+              Te guio pelo caminho que já trilhei.
+            </h3>
+            <div className="hairline my-6" />
+            <p className="text-sm leading-relaxed text-[var(--ink-soft)]">
+              Foco no SEU desenvolvimento como líder.
+            </p>
+          </article>
+
+          <div
+            className="flex items-center justify-center font-serif text-7xl lg:text-8xl text-[var(--gold)]"
+            aria-hidden
+          >
+            +
+          </div>
+
+          <article className="bg-background border border-[var(--border)] p-8 lg:p-10 flex flex-col">
+            <Settings className="h-6 w-6 text-[var(--gold)]" strokeWidth={1.4} />
+            <p className="mt-6 text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
+              Consultoria
+            </p>
+            <h3 className="mt-4 font-serif text-2xl text-[var(--deep)] leading-snug">
+              Entro no seu negócio para ajustar as engrenagens.
+            </h3>
+            <div className="hairline my-6" />
+            <p className="text-sm leading-relaxed text-[var(--ink-soft)]">
+              Foco na SOLUÇÃO de problemas.
+            </p>
+          </article>
         </div>
+
 
         <p className="mt-16 text-center font-serif text-xl sm:text-2xl text-[var(--deep)] text-balance">
           Resultado: o melhor dos dois mundos — Lucro, Crescimento e Previsão.
