@@ -24,9 +24,9 @@ export const Route = createFileRoute("/consultoria")({
   head: () => ({
     meta: [
       { title: "Consultoria · R. Velozo" },
-      { name: "description", content: "[Descrição será inserida posteriormente]" },
+      { name: "description", content: "Reorganize sua operação, desenvolva lideranças e recupere tempo para conduzir a empresa em vez de apagar incêndios." },
       { property: "og:title", content: "Consultoria · R. Velozo" },
-      { property: "og:description", content: "[Descrição será inserida posteriormente]" },
+      { property: "og:description", content: "Reorganize sua operação, desenvolva lideranças e recupere tempo para conduzir a empresa em vez de apagar incêndios." },
     ],
   }),
   component: ConsultoriaPage,
