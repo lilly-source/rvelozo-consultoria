@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/velozo-hero.jpg";
+import heroAsset from "@/assets/velozo-foto-08a.png.asset.json";
+const heroImg = heroAsset.url;
 import portraitImg from "@/assets/velozo-portrait.jpg";
 import seatedImg from "@/assets/velozo-seated.jpg";
 import { SiteHeader } from "@/components/SiteHeader";
