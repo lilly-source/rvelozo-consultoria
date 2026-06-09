@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Consultoria boutique para empresários que querem sair do operacional, estruturar a gestão e construir um negócio que cresce sem depender deles.",
+          "Reorganize sua operação, desenvolva lideranças e recupere tempo para conduzir a empresa em vez de apagar incêndios.",
       },
       { property: "og:title", content: "R. Velozo · Mentoria & Consultoria" },
       {
