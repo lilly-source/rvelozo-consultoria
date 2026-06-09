@@ -9,11 +9,17 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as MentoriaRouteImport } from './routes/mentoria'
 import { Route as DiscRouteImport } from './routes/disc'
 import { Route as ConsultoriaRouteImport } from './routes/consultoria'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MentoriaRoute = MentoriaRouteImport.update({
   id: '/mentoria',
   path: '/mentoria',
@@ -40,12 +46,14 @@ export interface FileRoutesByFullPath {
   '/consultoria': typeof ConsultoriaRoute
   '/disc': typeof DiscRoute
   '/mentoria': typeof MentoriaRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/consultoria': typeof ConsultoriaRoute
   '/disc': typeof DiscRoute
   '/mentoria': typeof MentoriaRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -53,13 +61,14 @@ export interface FileRoutesById {
   '/consultoria': typeof ConsultoriaRoute
   '/disc': typeof DiscRoute
   '/mentoria': typeof MentoriaRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/consultoria' | '/disc' | '/mentoria'
+  fullPaths: '/' | '/consultoria' | '/disc' | '/mentoria' | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/consultoria' | '/disc' | '/mentoria'
-  id: '__root__' | '/' | '/consultoria' | '/disc' | '/mentoria'
+  to: '/' | '/consultoria' | '/disc' | '/mentoria' | '/sitemap.xml'
+  id: '__root__' | '/' | '/consultoria' | '/disc' | '/mentoria' | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -67,10 +76,18 @@ export interface RootRouteChildren {
   ConsultoriaRoute: typeof ConsultoriaRoute
   DiscRoute: typeof DiscRoute
   MentoriaRoute: typeof MentoriaRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/mentoria': {
       id: '/mentoria'
       path: '/mentoria'
@@ -107,6 +124,7 @@ const rootRouteChildren: RootRouteChildren = {
   ConsultoriaRoute: ConsultoriaRoute,
   DiscRoute: DiscRoute,
   MentoriaRoute: MentoriaRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
