@@ -74,22 +74,25 @@ function Diagnostico() {
               </h2>
             </div>
 
-            <div className="mt-12 grid sm:grid-cols-1 gap-px bg-[var(--border)] border border-[var(--border)]">
+            <div className="mt-12 max-w-xl flex flex-col divide-y divide-[var(--border)] border-y border-[var(--border)]">
               {items.map(({ icon: Icon, title }) => (
-                <div key={title} className="bg-background p-8 lg:p-10">
-                  <Icon className="h-5 w-5 text-[var(--gold)]" strokeWidth={1.5} />
-                  <h3 className="mt-6 font-serif text-xl text-[var(--deep)] leading-snug">{title}</h3>
+                <div key={title} className="flex items-center gap-5 py-5">
+                  <Icon className="h-7 w-7 text-[var(--gold)] shrink-0" strokeWidth={1.6} />
+                  <h3 className="font-serif text-base lg:text-lg text-[var(--deep)] leading-snug">{title}</h3>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="lg:col-span-5 order-first lg:order-last">
-            <img
-              src={heroPhoto.url}
-              alt="Raphael Velozo"
-              className="w-full h-auto object-cover rounded-2xl shadow-[0_30px_60px_-20px_rgba(15,23,42,0.35)] ring-1 ring-[var(--deep)]/5"
-            />
+            <div className="relative overflow-hidden rounded-2xl shadow-[0_30px_60px_-20px_rgba(15,23,42,0.35)] ring-1 ring-[var(--deep)]/5">
+              <img
+                src={heroPhoto.url}
+                alt="Raphael Velozo"
+                className="w-full h-auto object-cover"
+                loading="eager"
+              />
+            </div>
           </div>
         </div>
 
