@@ -20,9 +20,9 @@ export const Route = createFileRoute("/mentoria")({
   head: () => ({
     meta: [
       { title: "Mentoria · R. Velozo" },
-      { name: "description", content: "Construa sua trajetória de alta performance: forme uma equipe que veste a camisa de verdade e conquiste mais liberdade." },
+      { name: "description", content: "Reorganize sua operação, desenvolva lideranças e recupere tempo para conduzir a empresa em vez de apagar incêndios." },
       { property: "og:title", content: "Mentoria · R. Velozo" },
-      { property: "og:description", content: "Construa sua trajetória de alta performance: forme uma equipe que veste a camisa de verdade e conquiste mais liberdade." },
+      { property: "og:description", content: "Reorganize sua operação, desenvolva lideranças e recupere tempo para conduzir a empresa em vez de apagar incêndios." },
     ],
   }),
   component: MentoriaPage,
