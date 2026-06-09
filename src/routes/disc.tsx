@@ -246,6 +246,11 @@ function Benefits() {
       title: "Autoconhecimento",
       text: "Conheça suas forças e neutralize suas travas.",
     },
+    {
+      icon: Users,
+      title: "Liderança Adaptativa",
+      text: "Lidere diferentes perfis com mais influência e menos atrito.",
+    },
   ];
   return (
     <section className="py-24 lg:py-32 bg-background">
@@ -262,8 +267,10 @@ function Benefits() {
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--border)] border border-[var(--border)]">
           {items.map(({ icon: Icon, title, text }) => (
             <div key={title} className="bg-background p-8 lg:p-10">
-              <Icon className="h-5 w-5 text-[var(--gold)]" strokeWidth={1.5} />
-              <h3 className="mt-6 font-serif text-xl text-[var(--deep)]">{title}</h3>
+              <div className="flex items-center gap-3">
+                <Icon className="h-5 w-5 text-[var(--gold)] shrink-0" strokeWidth={1.5} />
+                <h3 className="font-serif text-xl text-[var(--deep)] leading-snug">{title}</h3>
+              </div>
               <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)]">
                 {text}
               </p>
