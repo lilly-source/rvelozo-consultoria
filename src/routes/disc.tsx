@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
-import heroPhoto from "@/assets/velozo-foto-06a.png.asset.json";
+import heroPhoto from "@/assets/velozo-foto-06a.png";
 import { SiteFooter } from "@/components/SiteFooter";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import {
@@ -75,7 +75,7 @@ function Hero() {
           <div className="lg:col-span-5 order-first lg:order-last">
             <div className="relative overflow-hidden rounded-2xl shadow-[0_30px_60px_-20px_rgba(15,23,42,0.35)] ring-1 ring-[var(--deep)]/5">
               <img
-                src={heroPhoto.url}
+                src={heroPhoto}
                 alt="Raphael Velozo"
                 className="w-full h-auto object-cover"
                 loading="eager"
