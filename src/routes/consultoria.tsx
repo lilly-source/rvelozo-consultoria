@@ -18,6 +18,7 @@ import {
   LineChart,
   GitCompare,
 } from "lucide-react";
+import heroPhoto from "@/assets/velozo-foto-07a.png.asset.json";
 
 export const Route = createFileRoute("/consultoria")({
   head: () => ({
@@ -62,22 +63,34 @@ function Diagnostico() {
   return (
     <section className="py-24 lg:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="max-w-3xl">
-          <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-            Diagnóstico
-          </p>
-          <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-[var(--deep)] text-balance">
-            Você é dono do seu negócio ou seu negócio é seu dono?
-          </h2>
-        </div>
-
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--border)] border border-[var(--border)]">
-          {items.map(({ icon: Icon, title }) => (
-            <div key={title} className="bg-background p-8 lg:p-10">
-              <Icon className="h-5 w-5 text-[var(--gold)]" strokeWidth={1.5} />
-              <h3 className="mt-6 font-serif text-xl text-[var(--deep)] leading-snug">{title}</h3>
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+          <div className="lg:col-span-7 order-last lg:order-first">
+            <div className="max-w-3xl">
+              <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
+                Diagnóstico
+              </p>
+              <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-[var(--deep)] text-balance">
+                Você é dono do seu negócio ou seu negócio é seu dono?
+              </h2>
             </div>
-          ))}
+
+            <div className="mt-12 grid sm:grid-cols-1 gap-px bg-[var(--border)] border border-[var(--border)]">
+              {items.map(({ icon: Icon, title }) => (
+                <div key={title} className="bg-background p-8 lg:p-10">
+                  <Icon className="h-5 w-5 text-[var(--gold)]" strokeWidth={1.5} />
+                  <h3 className="mt-6 font-serif text-xl text-[var(--deep)] leading-snug">{title}</h3>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="lg:col-span-5 order-first lg:order-last">
+            <img
+              src={heroPhoto.url}
+              alt="Raphael Velozo"
+              className="w-full h-auto object-cover rounded-2xl shadow-[0_30px_60px_-20px_rgba(15,23,42,0.35)] ring-1 ring-[var(--deep)]/5"
+            />
+          </div>
         </div>
 
         <p className="mt-16 font-serif text-2xl sm:text-3xl text-[var(--deep)] text-balance max-w-3xl">
