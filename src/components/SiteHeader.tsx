@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import rvelozoLogo from "@/assets/rvelozo-logo.png.asset.json";
+import rvelozoLogo from "@/assets/Icone-azulescuro.png";
 
 export function SiteHeader() {
   return (
@@ -7,7 +7,7 @@ export function SiteHeader() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <img
-            src={rvelozoLogo.url}
+            src={rvelozoLogo}
             alt="RVelozo"
             className="h-8 w-auto md:h-10"
           />

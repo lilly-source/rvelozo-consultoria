@@ -18,7 +18,7 @@ import {
   LineChart,
   GitCompare,
 } from "lucide-react";
-import heroPhoto from "@/assets/velozo-foto-07a.png.asset.json";
+import heroPhoto from "@/assets/velozo-foto-07a.png";
 
 export const Route = createFileRoute("/consultoria")({
   head: () => ({
@@ -87,7 +87,7 @@ function Diagnostico() {
           <div className="lg:col-span-5 order-first lg:order-last">
             <div className="relative overflow-hidden rounded-2xl shadow-[0_30px_60px_-20px_rgba(15,23,42,0.35)] ring-1 ring-[var(--deep)]/5">
               <img
-                src={heroPhoto.url}
+                src={heroPhoto}
                 alt="Raphael Velozo"
                 className="w-full h-auto object-cover"
                 loading="eager"
