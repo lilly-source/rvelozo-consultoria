@@ -62,7 +62,7 @@ function Hero() {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <a
-                href="https://wa.me/5521964454543?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20minha%20An%C3%A1lise%20DISC."
+                href="https://wa.me/5521972052155?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20minha%20An%C3%A1lise%20DISC."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 bg-[var(--deep)] text-[var(--background)] px-7 py-4 text-sm tracking-wide hover:bg-[var(--institutional)] transition-colors"
