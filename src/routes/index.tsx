@@ -69,7 +69,7 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7">
           <p className="gold-rule text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-            Mentoria &amp; Consultoria Estratégica
+            Mentoria & Consultoria Estratégica
           </p>
           <h1 className="mt-8 font-serif text-[2.6rem] sm:text-5xl lg:text-[3.75rem] leading-[1.08] text-[var(--deep)] text-balance">
             Transforme sua empresa em uma operação que cresce
@@ -289,7 +289,7 @@ function Authority() {
             Carreira construída dentro de operações exigentes — do varejo de alta escala à educação
             corporativa e técnica. Vivência de chão de loja, liderança de equipes multidisciplinares
             e direção de unidades educacionais. Hoje, esse repertório se traduz em consultoria
-            objetiva para empresários que precisam de método, não de palco.
+            objetiva para empresários que precisam de método, not de palco.
           </p>
           <div className="mt-10 relative aspect-[4/5] overflow-hidden max-w-sm lg:hidden">
             <img
