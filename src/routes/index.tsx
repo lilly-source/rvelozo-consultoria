@@ -420,7 +420,7 @@ function FinalCTA() {
         </p>
         <div className="mt-12">
           <a
-            href="https://wa.me/5521964454543?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico."
+            href="https://wa.me/5521972052155?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico."
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 bg-[var(--deep)] text-[var(--background)] px-9 py-5 text-sm tracking-wide hover:bg-[var(--institutional)] transition-colors"
