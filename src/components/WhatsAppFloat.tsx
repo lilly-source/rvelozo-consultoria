@@ -16,7 +16,7 @@ export function WhatsAppFloat() {
       <span
         className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-[var(--background)] shadow-[0_8px_24px_-6px_rgba(37,211,102,0.45)] transition-all duration-500 ease-out group-hover:bg-[#20BD5A] group-hover:scale-[1.03] group-hover:shadow-[0_12px_32px_-6px_rgba(37,211,102,0.45)]"
       >
-        <WhatsappIcon className="h-6 w-6" />
+        <WhatsappIcon className="h-9 w-9" />
       </span>
     </a>
   );
