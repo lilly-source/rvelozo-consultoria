@@ -9,7 +9,7 @@ export function SiteFooter() {
               Mentoria &amp; Consultoria
             </p>
             <p className="mt-6 text-sm leading-relaxed text-[#C7C0AE] max-w-sm">
-              Estruturamos gestão, processos e liderança para que sua empresa cresça 
+              Estruturamos gestão, processos e liderança para que sua empresa cresça <br>
               com previsibilidade — sem que tudo dependa de você.
             </p>
           </div>
