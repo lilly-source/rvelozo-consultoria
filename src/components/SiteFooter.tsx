@@ -26,7 +26,7 @@ export function SiteFooter() {
             <p className="text-xs uppercase tracking-[0.24em] text-[var(--sand)] mb-4">Contato</p>
             <ul className="space-y-2">
               <li>Rio de Janeiro · Brasil</li>
-              <li>contato@rvelozo.com.br</li>
+              <li>mentoria.consultoriarvelozo@gmail.com</li>
               <li>WhatsApp disponível</li>
             </ul>
           </div>
