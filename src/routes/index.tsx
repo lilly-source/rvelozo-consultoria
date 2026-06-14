@@ -54,7 +54,6 @@ function Home() {
         <Method />
         <Authority />
         <Services />
-        <FreeMaterial />
         <FinalCTA />
       </main>
       <SiteFooter />
@@ -283,7 +282,7 @@ function Authority() {
             Quem conduz
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.12] text-[var(--deep)] text-balance">
-            25 anos liderando operações, equipes e estruturas reais.
+            25 anos liderando operações, equipes and estruturas reais.
           </h2>
           <div className="hairline my-10" />
           <p className="text-base text-[var(--ink-soft)] leading-relaxed">
@@ -394,48 +393,6 @@ function Services() {
               </a>
             </article>
           ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ---------------- FREE MATERIAL ---------------- */
-function FreeMaterial() {
-  return (
-    <section className="py-24 lg:py-32 bg-[var(--muted)]">
-      <div className="mx-auto max-w-4xl px-6 lg:px-10">
-        <div className="bg-background border border-[var(--gold)]/30 p-8 sm:p-12 lg:p-16 text-center relative overflow-hidden shadow-[0_20px_50px_-12px_rgba(16,32,66,0.08)]">
-          {/* Decorative subtle gold corners for premium editorial look */}
-          <div className="absolute top-0 left-0 w-4 h-4 border-t border-l border-[var(--gold)]/40" />
-          <div className="absolute top-0 right-0 w-4 h-4 border-t border-r border-[var(--gold)]/40" />
-          <div className="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-[var(--gold)]/40" />
-          <div className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-[var(--gold)]/40" />
-
-          <p className="gold-rule justify-center text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)] inline-block">
-            Material Gratuito
-          </p>
-          
-          <h2 className="mt-6 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.15] text-[var(--deep)] text-balance max-w-2xl mx-auto">
-            Guia Completo de Gestão e Liderança de Alta Performance
-          </h2>
-          
-          <p className="mt-6 text-base lg:text-lg text-[var(--ink-soft)] leading-relaxed max-w-2xl mx-auto">
-            Aprenda os fundamentos que ajudam empresários e gestores a saírem da operação e construírem equipes mais autônomas.
-          </p>
-          
-          <div className="mt-10 flex justify-center">
-            <a
-              href="/Ebook-Guia-Completo-Gestao-e-Lideranca.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              download="Ebook - Guia Completo Gestao & Lideranca de Alta Performance.pdf"
-              className="group inline-flex items-center justify-center gap-2 bg-[var(--deep)] text-[var(--background)] px-8 py-4 text-sm tracking-wide hover:bg-[var(--institutional)] transition-colors"
-            >
-              Baixar Material
-              <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
-          </div>
         </div>
       </div>
     </section>
