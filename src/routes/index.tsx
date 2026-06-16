@@ -25,7 +25,7 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "R. Velozo · Mentoria & Consultoria para Empresários" },
+      { title: "RVelozo · Mentoria & Consultoria para Empresários" },
       {
         name: "description",
         content:
