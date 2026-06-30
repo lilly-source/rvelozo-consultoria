@@ -116,13 +116,13 @@ function Problem() {
     },
     {
       icon: Users,
-      title: "Dificuldade de delegação",
-      desc: "Equipe que não assume o processo e parece nunca vestir a camisa de verdade.",
+      title: "Falta de Posicionamento",
+      desc: "Clientes que barganham preço, questionam procedimentos e desorganizam sua agenda e sua rotina.",
     },
     {
       icon: Compass,
-      title: "Perda de liberdade",
-      desc: "Tempo escorrendo entre os dedos e a vida pessoal sempre em segundo plano.",
+      title: "Falta de tempo",
+      desc: "O tempo escorre entre os dedos e a vida pessoal sempre em segundo plano.",
     },
   ];
   return (
