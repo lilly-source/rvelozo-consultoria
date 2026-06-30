@@ -71,7 +71,7 @@ function Hero() {
             Noites mal dormidas. Dificuldade em dizer NÃO. Incapacidade de delegar porque "ninguém faz do jeito que eu faço."{" "}
             <br />
             <br />
-            Se você se sente travado no dia a dia, perdendo sua liberdade e vendo o tempo escorrer entre os dedos — você está no lugar certo para mudar esse jogo.{" "}
+            Se você se sente travado no dia a dia, perdendo sua liberdade e vendo o tempo escorrer entre os dedos — <strong>você está no lugar certo para mudar esse jogo.</strong>
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a
