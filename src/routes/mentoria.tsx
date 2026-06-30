@@ -171,7 +171,7 @@ function Mindset() {
             Aprender a se posicionar é o primeiro passo para se tornar um empreendedor de sucesso. Aqui, eu te ajudo a se desenvolver, se tornar referência na sua área e parar de ser refém de uma agenda lotada que sufoca em vez de crescer..
           </p>
           <p className="mt-6 text-base lg:text-lg text-[var(--ink-soft)] leading-relaxed">
-            Juntos, vamos estruturar um planejamento para que em 1 ano você e o seu negócio atinjam a alta performance — com mais resultado, mais liberdade e mais qualidade de vida..
+            Juntos, vamos estruturar um planejamento para que em <strong>1 ano</strong> você e o seu negócio atinjam a <strong>alta performance</strong> — com mais resultado, mais liberdade e mais qualidade de vida..
           </p>
         </div>
 
