@@ -164,7 +164,7 @@ function Mindset() {
             Do operacional ao estratégico
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-[var(--deep)] text-balance">
-            Sair da rotina que sufoca e assumir o lugar de quem realmente lidera.
+            Pare de sobreviver à Rotina e Assuma o lugar de quem Realmente é Dono de um Negócio.
           </h2>
           <div className="hairline my-10" />
           <p className="text-base lg:text-lg text-[var(--ink-soft)] leading-relaxed">
