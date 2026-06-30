@@ -168,7 +168,7 @@ function Mindset() {
           </h2>
           <div className="hairline my-10" />
           <p className="text-base lg:text-lg text-[var(--ink-soft)] leading-relaxed">
-            Muitos profissionais vivem presos na Mentalidade Operacional. É aquela sensação sufocante de que, se você parar, tudo para. Noites mal dormidas, dificuldade real em delegar e uma equipe que parece nunca vestir a camisa.
+            Aprender a se posicionar é o primeiro passo para se tornar um empreendedor de sucesso. Aqui, eu te ajudo a se desenvolver, se tornar referência na sua área e parar de ser refém de uma agenda lotada que sufoca em vez de crescer..
           </p>
           <p className="mt-6 text-base lg:text-lg text-[var(--ink-soft)] leading-relaxed">
             Se você se sente travado no dia a dia, perdendo sua liberdade e vendo o tempo escorrer entre os dedos, você está no lugar certo para mudar esse jogo.
