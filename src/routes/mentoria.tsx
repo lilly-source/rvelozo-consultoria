@@ -59,7 +59,7 @@ function Hero() {
             Mentoria
           </p>
           <h1 className="mt-8 font-serif text-[2.6rem] sm:text-5xl lg:text-[3.75rem] leading-[1.08] text-[var(--deep)] text-balance">
-            Construa sua Trajetória de Alta Performance
+            Mudança de Mentalidade
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[var(--ink-soft)] text-pretty">
             Forme uma equipe que veste a camisa de verdade da sua empresa e tenha mais liberdade.
