@@ -64,10 +64,12 @@ function Hero() {
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[var(--ink-soft)] text-pretty">
             Muitos profissionais vivem presos na mentalidade de ser apenas um cabeleireiro, esteticista, barbeiro ou manicure.
             <br />
+            <br />
             É aquela sensação de "sou apenas mais um profissional do meu bairro" — a crença de que seu cliente nunca vai pagar mais pelo seu  serviço, de que você precisa estar disponível a qualquer hora, em qualquer dia, e de que se parar, mesmo que por um dia de folga, tudo vai desmoronar.{" "} 
             <br />
             <br />
             Noites mal dormidas. Dificuldade em dizer NÃO. Incapacidade de delegar porque "ninguém faz do jeito que eu faço."{" "}
+            <br />
             <br />
             Se você se sente travado no dia a dia, perdendo sua liberdade e vendo o tempo escorrer entre os dedos — você está no lugar certo para mudar esse jogo.{" "}
           </p>
