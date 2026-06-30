@@ -135,9 +135,6 @@ function Problem() {
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-white text-balance">
             Os 4 Sinais de que você está preso no Operacional
           </h2>
-          <p className="mt-6 text-base lg:text-lg leading-relaxed text-[#C8C1AE] max-w-2xl">
-            É aquela sensação sufocante de que, se você parar, tudo para. Noites mal dormidas, dificuldade real em delegar e uma equipe que parece nunca vestir a camisa. Se você se sente travado no dia a dia, perdendo sua liberdade e vendo o tempo escorrer entre os dedos, você está no lugar certo para mudar esse jogo.
-          </p>
         </div>
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10">
