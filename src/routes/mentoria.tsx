@@ -62,7 +62,7 @@ function Hero() {
             Mudança de Mentalidade
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[var(--ink-soft)] text-pretty">
-            Forme uma equipe que veste a camisa de verdade da sua empresa e tenha mais liberdade.
+            Muitos profissionais vivem presos na mentalidade de ser apenas um cabeleireiro, esteticista, barbeiro ou manicure.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a
