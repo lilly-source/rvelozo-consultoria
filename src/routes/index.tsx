@@ -282,15 +282,40 @@ function Authority() {
             Quem conduz
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.12] text-[var(--deep)] text-balance">
-            25 anos liderando operações, equipes and estruturas reais.
+            Eu não apenas ensino gestão e liderança — eu as vivo na prática há 25 anos.
           </h2>
           <div className="hairline my-10" />
+
+          <div className="space-y-6 text-base text-[var(--ink-soft)] leading-relaxed">
+            <p>
+              Minha jornada foi construída na prática do dia a dia do empreendedorismo e validada nas grandes referências do mercado: apliquei gestão e liderança em gigantes como o <strong>McDonald's</strong> (setor alimentício) e nas maiores instituições de ensino técnico e profissional no segmento de beleza e bem-estar onde atuei como <em>professor, coordenador de cursos e como especialista de treinamento e desenvolvimento de soluções</em> para profissionais do mercado de beleza e bem estar como <strong>Grupo Embelleze, Senac RJ, FUNDEC, IFRJ e Consórcio CEDERJ.</strong>
+            </p>
+
+            <p>
+              Fui proprietário de <strong>dois salões de beleza</strong> (Velozo Estúdio Hair) e de <strong>uma barbearia</strong> (Velozo Estúdio Barber) — foram 16 anos empreendendo diretamente nos setores de beleza, bem-estar. Nos últimos <strong>13 anos</strong>, venho liderando equipes de alta performance na área da educação técnica e profissional.
+            </p>
+          </div>
+
+          <div className="hairline my-10" />
+
+          <div className="space-y-6 text-base text-[var(--ink-soft)] leading-relaxed">
+            <p className="font-serif text-xl text-[var(--deep)]">
+              Mas essa trajetória não foi sempre de sucesso.
+            </p>
+            <p>
+              Empreender é difícil, e eu aprendi isso da forma mais dura: cometi erros, acumulei dívidas e cheguei a quebrar.
+            </p>
+            <p>
+              Tive que recomeçar do zero, sem certezas e com o peso de um negócio nas costas.
+            </p>
+          </div>
+
+          <div className="hairline my-10" />
+
           <p className="text-base text-[var(--ink-soft)] leading-relaxed">
-            Carreira construída dentro de operações exigentes — do varejo de alta escala à educação
-            corporativa e técnica. Vivência de chão de loja, liderança de equipes multidisciplinares
-            e direção de unidades educacionais. Hoje, esse repertório se traduz em consultoria
-            objetiva para empresários que precisam de método, não de palco.
+            É exatamente por isso que hoje eu sei — com propriedade — como sair da desorganização, da escassez e da incerteza para construir uma <strong>gestão de alta performance que gera lucro real, previsão e liberdade.</strong>
           </p>
+
           <div className="mt-10 relative aspect-[4/5] overflow-hidden max-w-sm lg:hidden">
             <img
               src={seatedImg}
