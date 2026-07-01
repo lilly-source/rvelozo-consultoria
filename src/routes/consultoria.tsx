@@ -181,7 +181,7 @@ function Liberdade() {
     {
       icon: Wallet,
       title: "Lucro Real",
-      desc: "Previsibilidade no caixa todo mês.",
+      desc: "Previsão de caixa todo mês.",
     },
     {
       icon: Clock,
