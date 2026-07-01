@@ -329,10 +329,12 @@ function Caminho() {
           </article>
         </div>
 
-
-        <p className="mt-16 text-center font-serif text-xl sm:text-2xl text-[var(--deep)] text-balance">
+          <article className="bg-background border border-[var(--border)] p-8 lg:p-10 flex flex-col">
+            <Settings className="h-6 w-6 text-[var(--gold)]" strokeWidth={1.4} />
+            <p className="mt-16 text-center font-serif text-xl sm:text-2xl text-[var(--deep)] text-balance">
           Resultado: o melhor dos dois mundos — Lucro, Crescimento e Previsão.
         </p>
+        </article>
       </div>
     </section>
   );
