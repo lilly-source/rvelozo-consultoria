@@ -49,10 +49,10 @@ function Home() {
       <SiteHeader />
       <main>
         <Hero />
+        <Authority />
         <Pains />
         <Transformation />
         <Method />
-        <Authority />
         <Services />
         <FinalCTA />
       </main>

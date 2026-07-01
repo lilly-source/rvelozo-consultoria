@@ -329,12 +329,19 @@ function Caminho() {
           </article>
         </div>
 
-          <article className="bg-background border border-[var(--border)] p-8 lg:p-10 flex flex-col">
-            <Settings className="h-6 w-6 text-[var(--gold)]" strokeWidth={1.4} />
-            <p className="mt-16 text-center font-serif text-xl sm:text-2xl text-[var(--deep)] text-balance">
-          Resultado: o melhor dos dois mundos — Lucro, Crescimento e Previsão.
-        </p>
-        </article>
+          {/* Fusão sinérgica — resultado */}
+          <article className="mt-16 lg:mt-20 mx-auto max-w-2xl relative">
+            {/* gradient border ring */}
+            <div className="absolute -inset-[2px] rounded-sm bg-gradient-to-br from-[var(--gold)]/40 via-[var(--gold)]/5 to-[var(--gold)]/20 pointer-events-none" />
+            {/* card body */}
+            <div className="relative bg-background px-8 lg:px-12 py-10 lg:py-12 text-center shadow-[0_4px_20px_-8px_rgba(158,131,91,0.12)]">
+              <p className="font-serif text-xl sm:text-2xl text-[var(--deep)] text-balance leading-relaxed">
+                <span className="text-[var(--gold)]">Resultado:</span>{" "}
+                o melhor dos dois mundos — Lucro, Crescimento e Previsão.
+              </p>
+              <div className="mt-6 h-px bg-gradient-to-r from-transparent via-[var(--gold)]/20 to-transparent" />
+            </div>
+          </article>
       </div>
     </section>
   );
