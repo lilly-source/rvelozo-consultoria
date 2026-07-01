@@ -296,7 +296,7 @@ function Caminho() {
           <article className="bg-background border border-[var(--border)] p-8 lg:p-10 flex flex-col">
             <Compass className="h-6 w-6 text-[var(--gold)]" strokeWidth={1.4} />
             <p className="mt-6 text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-              Mentoria
+
             </p>
             <h3 className="mt-4 font-serif text-2xl text-[var(--deep)] leading-snug">
               Te guio pelo caminho que já trilhei.
@@ -317,7 +317,7 @@ function Caminho() {
           <article className="bg-background border border-[var(--border)] p-8 lg:p-10 flex flex-col">
             <Settings className="h-6 w-6 text-[var(--gold)]" strokeWidth={1.4} />
             <p className="mt-6 text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
-              Consultoria
+              
             </p>
             <h3 className="mt-4 font-serif text-2xl text-[var(--deep)] leading-snug">
               Entro no seu negócio para ajustar as engrenagens.
