@@ -288,7 +288,7 @@ function Authority() {
 
           <div className="space-y-6 text-base text-[var(--ink-soft)] leading-relaxed">
             <p>
-              Minha jornada foi construída na prática do dia a dia do empreendedorismo e validada nas grandes referências do mercado: apliquei gestão e liderança em gigantes como o <strong>McDonald's</strong> (setor alimentício) e nas maiores instituições de ensino técnico e profissional no segmento de beleza e bem-estar onde atuei como <em>professor, coordenador de cursos e como especialista de treinamento e desenvolvimento de soluções</em> para profissionais do mercado de beleza e bem estar como <strong>Grupo Embelleze, Senac RJ, FUNDEC, IFRJ e Consórcio CEDERJ.</strong>
+              Minha jornada foi construída na prática do dia a dia do empreendedorismo e validada nas grandes referências do mercado: apliquei gestão e liderança em gigantes como o <strong>McDonald's</strong> (setor alimentício) e nas maiores instituições de ensino técnico e profissional no segmento de beleza e bem estar onde atuei como <em>professor, coordenador de cursos e como especialista de treinamento e desenvolvimento de soluções</em> para profissionais do mercado de beleza e bem estar como <strong>Grupo Embelleze, Senac RJ, FUNDEC, IFRJ e Consórcio CEDERJ.</strong>
             </p>
 
             <p>
