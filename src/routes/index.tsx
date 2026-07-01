@@ -343,7 +343,7 @@ function Services() {
     {
       icon: Compass,
       title: "Mentoria",
-      desc: "Encontros individuais e quinzenais para empreendedores que precisam de clareza, direção e um mudança de mentalidade. ",
+      desc: "Encontros individuais e quinzenais para empreendedores que precisam de clareza, direção e um mudança de mentalidade. asdasd",
       cta: "Conhecer mentoria",
       href: "/mentoria",
     },
