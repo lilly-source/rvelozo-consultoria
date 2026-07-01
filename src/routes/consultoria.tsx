@@ -125,7 +125,7 @@ function CicloSobrevivente() {
             O ciclo do sobrevivente
           </p>
           <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-white text-balance">
-            O ciclo que mantém o empresário operacional preso à rotina.
+            O ciclo que mantém o empreendedor preso à rotina da Execução
           </h2>
         </div>
 
