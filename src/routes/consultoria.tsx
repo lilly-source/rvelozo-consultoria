@@ -56,8 +56,8 @@ function ConsultoriaPage() {
 /* ---------------- 2. DIAGNÓSTICO ---------------- */
 function Diagnostico() {
   const items = [
-    { icon: Wallet, title: "Cansaço não é sinal de sucesso. É sinal de que algo precisa mudar" },
-    { icon: AlertTriangle, title: "Trabalhe menos. Gerencie melhor. Lucre mais." },
+    { icon: AlertTriangle, title: "Cansaço não é sinal de sucesso. É sinal de que algo precisa mudar" },
+    { icon: Wallet, title: "Trabalhe menos. Gerencie melhor. Lucre mais." },
     { icon: GitCompare, title: "Sente que se você parar por um dia, tudo para?" },
   ];
   return (
