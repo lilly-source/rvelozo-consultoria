@@ -72,8 +72,8 @@ function Hero() {
             Mentoria & Consultoria Estratégica
           </p>
           <h1 className="mt-8 font-serif text-[2.6rem] sm:text-5xl lg:text-[3.75rem] leading-[1.08] text-[var(--deep)] text-balance">
-            Transforme sua empresa em uma operação que cresce
-            <span className="italic text-[var(--institutional)]"> sem depender de você.</span>
+            25 anos unindo gestão estratégica e
+            <span className="italic text-[var(--institutional)]"> liderança de alta performance.</span>
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-[var(--ink-soft)] text-pretty">
             Um método consultivo para reorganizar gestão, liderança e equipe, devolver previsibilidade ao
