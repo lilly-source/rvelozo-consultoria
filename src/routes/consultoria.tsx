@@ -70,7 +70,7 @@ function Diagnostico() {
                 Diagnóstico
               </p>
               <h2 className="mt-8 font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.12] text-[var(--deep)] text-balance">
-                Você é dono do seu negócio ou seu negócio é seu dono?
+                Você está exausto — e o resultado ainda não aparece. O problema não é você. É a gestão. 
               </h2>
             </div>
 
