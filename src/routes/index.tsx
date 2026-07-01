@@ -343,7 +343,7 @@ function Services() {
     {
       icon: Compass,
       title: "Mentoria",
-      desc: "Encontros estratégicos individuais para empresários que precisam de clareza, direção e um sparring experiente ao lado.",
+      desc: "Encontros individuais e quinzenais para empreendedores que precisam de clareza, direção e um mudança de mentalidade. ",
       cta: "Conhecer mentoria",
       href: "/mentoria",
     },
