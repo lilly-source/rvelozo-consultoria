@@ -343,7 +343,7 @@ function Services() {
     {
       icon: Compass,
       title: "Mentoria",
-      desc: "Encontros individuais e quinzenais para empreendedores que precisam de" <strong>"clareza, direção e um mudança de mentalidade.</strong>" Ao lado de um mentor com 25 anos de experiência, você vai aprender a se tornar um Gestor e começar a construir um negócio com estratégia e propósito.",
+      desc: "Encontros individuais e quinzenais para empreendedores que precisam de clareza, direção e um mudança de mentalidade. Ao lado de um mentor com 25 anos de experiência, você vai aprender a se tornar um Gestor e começar a construir um negócio com estratégia e propósito.",
       cta: "Conhecer mentoria",
       href: "/mentoria",
     },
